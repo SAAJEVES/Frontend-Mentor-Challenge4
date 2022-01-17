@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap')
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg), linear-gradient(135deg,hsl(185, 75%, 39%) 50%, hsl(185, 75%, 39%));
+    background-size: 50% 70%, 50% 70%, 100% 100%;
+    background-position: top left , bottom right, left;
+    background-repeat: no-repeat, no-repeat;
+    
+    min-height: 100vh;
+    
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+main{
+    background-color: #fff;
+    height: 400px;
+    width: 350px;
+    border: 0 solid white;
+    border-radius: 15px;
+}
+
+
+main > img{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+main > #first{
+    width: 100%;
+    height: auto;
+    margin-top: -55px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+
+main > #first > img{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+main > #first > p{
+    padding-bottom: 35px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    
+}
+
+main > #first > p > #span-1{
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+main > #first > p > #span-2{
+    font-size: 15px;
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+
+main > #second{
+    /* background-color: red; */
+    width: 100%;
+    height: 80px;
+    margin-top: -15px;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > #second > div{
+    padding-top: 10px;
+}
+
+
+main > #second > div > h4{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+main > #second > div > p{
+    font-size: 10px;
+    opacity: 0.6;
+    margin-top: -20px;
+}
+
+
+@media screen and (max-width: 375px) {
+    main{
+        width: 320px;
+    }
+}
